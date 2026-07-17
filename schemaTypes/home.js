@@ -5,11 +5,6 @@ export default {
 
   fields: [
     {
-      name: "testField",
-      title: "🚨 TEST FIELD 🚨",
-      type: "string",
-    },
-    {
       name: "featuredWorks",
       title: "Featured Works",
       type: "array",

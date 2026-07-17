@@ -1,5 +1,5 @@
-import artwork from './artwork';
-import about from './about'
-import home from './home'
+import artwork from './artwork.js'
+import about from './about.js'
+import home from './home.js'
 
-export const schemaTypes = [artwork, about, home];
+export const schemaTypes = [artwork, about, home]
