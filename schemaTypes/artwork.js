@@ -46,23 +46,67 @@ export default {
     {
       name: 'descriptionEn',
       title: 'Description (English)',
-      type: 'text',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          styles: [],
+          lists: [],
+          marks: {
+            decorators: [
+              { title: 'Italic', value: 'em' },
+            ],
+            annotations: [],
+          },
+        },
+      ],
     },
     {
       name: 'descriptionKo',
       title: 'Description (Korean / 한국어)',
-      type: 'text',
+      type: 'array',
+      of: [
+        {
+          type: 'block',
+          styles: [],
+          lists: [],
+          marks: {
+            decorators: [
+              { title: 'Italic', value: 'em' },
+            ],
+            annotations: [],
+          },
+        },
+      ],
     },
     {
-      name: 'caption',
-      title: 'Caption',
+      name: 'captionEn',
+      title: 'Caption (English)',
+      type: 'string',
+    },
+    {
+      name: 'captionKo',
+      title: 'Caption (Korean / 한국어)',
       type: 'string',
     },
     {
       name: 'gallery',
-      title: 'Image Gallery',
+      title: 'Image / Video Gallery',
       type: 'array',
-      of: [{ type: 'image', options: { hotspot: true } }],
+      of: [
+        {
+          type: 'image',
+          options: { hotspot: true },
+        },
+        {
+          type: 'file',
+          name: 'video',
+          title: 'Video',
+          options: {
+            accept: 'video/*',
+          },
+        },
+      ],
       validation: Rule => Rule.required().min(1),
     },
   ],

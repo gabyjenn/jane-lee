@@ -10,7 +10,19 @@ export default {
       {
         name: "bioEn",
         title: "Bio (English)",
-        type: "text",
+        of: [
+          {
+            type: 'block',
+            styles: [],
+            lists: [],
+            marks: {
+              decorators: [
+                { title: 'Italic', value: 'em' },
+              ],
+              annotations: [],
+            },
+          },
+        ],
       },
   
       {
@@ -46,7 +58,19 @@ export default {
               {
                 name: "descriptionKo",
                 title: "Description (Korean)",
-                type: "text",
+                of: [
+                  {
+                    type: 'block',
+                    styles: [],
+                    lists: [],
+                    marks: {
+                      decorators: [
+                        { title: 'Italic', value: 'em' },
+                      ],
+                      annotations: [],
+                    },
+                  },
+                ],
               },
   
             ],
@@ -76,7 +100,19 @@ export default {
               {
                 name: "descriptionEn",
                 title: "Description (English)",
-                type: "text",
+                of: [
+                  {
+                    type: 'block',
+                    styles: [],
+                    lists: [],
+                    marks: {
+                      decorators: [
+                        { title: 'Italic', value: 'em' },
+                      ],
+                      annotations: [],
+                    },
+                  },
+                ],
               },
   
               {
@@ -112,7 +148,19 @@ export default {
               {
                 name: "descriptionEn",
                 title: "Description (English)",
-                type: "text",
+                of: [
+                  {
+                    type: 'block',
+                    styles: [],
+                    lists: [],
+                    marks: {
+                      decorators: [
+                        { title: 'Italic', value: 'em' },
+                      ],
+                      annotations: [],
+                    },
+                  },
+                ],
               },
   
               {
@@ -148,7 +196,20 @@ export default {
               {
                 name: "descriptionEn",
                 title: "Description (English)",
-                type: "text",
+                type: 'array',
+                of: [
+                  {
+                    type: 'block',
+                    styles: [],
+                    lists: [],
+                    marks: {
+                      decorators: [
+                        { title: 'Italic', value: 'em' },
+                      ],
+                      annotations: [],
+                    },
+                  },
+                ],
               },
   
               {
