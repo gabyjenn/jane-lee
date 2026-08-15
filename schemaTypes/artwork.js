@@ -1,9 +1,18 @@
+import {
+  orderRankField,
+  orderRankOrdering,
+} from '@sanity/orderable-document-list'
+
 export default {
   name: 'artwork',
   title: 'Artwork',
   type: 'document',
+
   fields: [
-    // 1. DUAL LANGUAGE TITLE
+    orderRankField({
+      type: 'artwork',
+    }),
+
     {
       name: 'titleEn',
       title: 'Title (English)',
@@ -111,11 +120,12 @@ export default {
     },
   ],
   orderings: [
+    orderRankOrdering,
     {
       title: 'Year, Newest',
       name: 'yearDesc',
       by: [{ field: 'year', direction: 'desc' }]
-    }
+    },
   ],
 
   preview: {
