@@ -10,14 +10,15 @@ export default {
       {
         name: "bioEn",
         title: "Bio (English)",
+        type: "array",
         of: [
           {
-            type: 'block',
+            type: "block",
             styles: [],
             lists: [],
             marks: {
               decorators: [
-                { title: 'Italic', value: 'em' },
+                { title: "Italic", value: "em" },
               ],
               annotations: [],
             },
@@ -48,29 +49,30 @@ export default {
                 title: "Year",
                 type: "string",
               },
-  
+
               {
                 name: "descriptionEn",
                 title: "Description (English)",
-                type: "text",
-              },
-  
-              {
-                name: "descriptionKo",
-                title: "Description (Korean)",
+                type: "array",
                 of: [
                   {
-                    type: 'block',
+                    type: "block",
                     styles: [],
                     lists: [],
                     marks: {
                       decorators: [
-                        { title: 'Italic', value: 'em' },
+                        { title: "Italic", value: "em" },
                       ],
                       annotations: [],
                     },
                   },
                 ],
+              },
+  
+              {
+                name: "descriptionKo",
+                title: "Description (Korean)",
+                type: "text",
               },
   
             ],
@@ -100,6 +102,7 @@ export default {
               {
                 name: "descriptionEn",
                 title: "Description (English)",
+                type: "array",
                 of: [
                   {
                     type: 'block',
@@ -148,6 +151,7 @@ export default {
               {
                 name: "descriptionEn",
                 title: "Description (English)",
+                type: "array",
                 of: [
                   {
                     type: 'block',
